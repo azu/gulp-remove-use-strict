@@ -1,6 +1,6 @@
 {
   "name": "gulp-remove-use-strict",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "description": "A plugin for Gulp",
   "keywords": [
     "gulpplugin"
@@ -18,7 +18,7 @@
   "dependencies": {
     "through2": "*",
     "gulp-util": "~2.2.0",
-    "remove-use-strict": "0.0.3"
+    "remove-use-strict": "*"
   },
   "devDependencies": {
     "mocha": "*",
