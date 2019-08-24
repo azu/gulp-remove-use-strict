@@ -12,8 +12,7 @@
   },
   "repository": "azu/gulp-remove-use-strict",
   "scripts": {
-    "test": "istanbul test _mocha --report html -- test/*.js --reporter spec",
-    "coveralls": "istanbul cover ./node_modules/mocha/bin/_mocha --report lcovonly -- -R spec && cat ./coverage/lcov.info | ./node_modules/coveralls/bin/coveralls.js && rm -rf ./coverage"
+    "test": "mocha \"test/*.js\""
   },
   "dependencies": {
     "gulp-util": "~3.0.8",
@@ -21,11 +20,8 @@
     "through2": "^3.0.1"
   },
   "devDependencies": {
-    "coveralls": "*",
-    "event-stream": "*",
-    "istanbul": "*",
-    "mocha": "*",
-    "mocha-lcov-reporter": "*",
+    "event-stream": "^4.0.1",
+    "mocha": "^6.2.0",
     "should": "~13.2.3"
   },
   "engines": {
