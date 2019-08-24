@@ -1348,7 +1348,7 @@ readable-stream@~2.3.6:
     string_decoder "~1.1.1"
     util-deprecate "~1.0.1"
 
-remove-use-strict@*:
+remove-use-strict@^1.0.0:
   version "1.0.0"
   resolved "https://registry.yarnpkg.com/remove-use-strict/-/remove-use-strict-1.0.0.tgz#39df21b31826e666b642c9755791c32dff5a895e"
   integrity sha512-jhMtDEeIqIALT2XSksWffV3HQ3yOTDCK/IM6/BaX4zRqX5eFrmsxrnZIu2sN1Eux29/uUhF3DsQZc6/Le5p6fg==
@@ -1649,13 +1649,6 @@ supports-color@^5.3.0:
   dependencies:
     has-flag "^3.0.0"
 
-through2@*:
-  version "3.0.1"
-  resolved "https://registry.yarnpkg.com/through2/-/through2-3.0.1.tgz#39276e713c3302edf9e388dd9c812dd3b825bd5a"
-  integrity sha512-M96dvTalPT3YbYLaKaCuwu+j06D/8Jfib0o/PxbVt6Amhv3dUAtW6rTV1jPgJSBG83I/e04Y6xkVdVhSRhi0ww==
-  dependencies:
-    readable-stream "2 || 3"
-
 through2@^2.0.0:
   version "2.0.5"
   resolved "https://registry.yarnpkg.com/through2/-/through2-2.0.5.tgz#01c1e39eb31d07cb7d03a96a70823260b23132cd"
@@ -1663,6 +1656,13 @@ through2@^2.0.0:
   dependencies:
     readable-stream "~2.3.6"
     xtend "~4.0.1"
+
+through2@^3.0.1:
+  version "3.0.1"
+  resolved "https://registry.yarnpkg.com/through2/-/through2-3.0.1.tgz#39276e713c3302edf9e388dd9c812dd3b825bd5a"
+  integrity sha512-M96dvTalPT3YbYLaKaCuwu+j06D/8Jfib0o/PxbVt6Amhv3dUAtW6rTV1jPgJSBG83I/e04Y6xkVdVhSRhi0ww==
+  dependencies:
+    readable-stream "2 || 3"
 
 through@2, through@^2.3.8, through@~2.3, through@~2.3.4:
   version "2.3.8"
