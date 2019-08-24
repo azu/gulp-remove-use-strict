@@ -3,6 +3,7 @@ var through = require("through2"),
 var removeUst = require("remove-use-strict");
 module.exports = function (options) {
 	"use strict";
+
 	function removeUseStrict(file, enc, callback) {
 		/*jshint validthis:true*/
 
@@ -26,8 +27,13 @@ module.exports = function (options) {
 
 		// check if file.contents is a `Buffer`
 		if (file.isBuffer()) {
-
-			file.contents = new Buffer(removeUst(String(file.contents), options));
+			try {
+				file.contents = Buffer.from(removeUst(String(file.contents), options));
+			} catch (error) {
+				this.emit("error",
+					new gutil.PluginError("gulp-remove-use-strict", "Parse Error:" + String(file.contents)));
+				return callback();
+			}
 
 			this.push(file);
 
