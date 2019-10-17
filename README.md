@@ -25,13 +25,18 @@ gulp.src("./src/*.js")
 
 ## API
 
-### `remove-use-strict(options)`
+### remove-use-strict([options])
 
-The `options` object can contain:
+#### options
 
-- `force`
+Type: `Object`
 
-  Boolean. Set to `true` to remove `"use strict";` regardless of whether it appears as a directive prologue (see [remove-use-strict](azu/remove-use-strict) for more details). Default: `false`
+##### options.force
+
+Type: `boolean`
+Default: `false`
+
+  Set to `true` to remove `"use strict";` regardless of whether it appears as a directive prologue (see [remove-use-strict](azu/remove-use-strict) for more details).
 
 
 ## License
