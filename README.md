@@ -3,7 +3,7 @@
 [![NPM version][npm-image]][npm-url] [![Build Status][travis-image]][travis-url]
 
 
-> remove-use-strict plugin for [gulp](https://github.com/wearefractal/gulp)
+> [remove-use-strict](azu/remove-use-strict) plugin for [gulp](https://github.com/wearefractal/gulp)
 
 ## Usage
 
@@ -16,7 +16,7 @@ npm install --save-dev gulp-remove-use-strict
 Then, add it to your `gulpfile.js`:
 
 ```javascript
-var removeUseStrict = require("gulp-remove-use-strict");
+const removeUseStrict = require("gulp-remove-use-strict");
 
 gulp.src("./src/*.js")
 	.pipe(removeUseStrict())
@@ -25,7 +25,13 @@ gulp.src("./src/*.js")
 
 ## API
 
-### remove-use-strict(options)
+### `remove-use-strict(options)`
+
+The `options` object can contain:
+
+- `force`
+
+  Boolean. Set to `true` to remove `"use strict";` regardless of whether it appears as a directive prologue (see [remove-use-strict](azu/remove-use-strict) for more details). Default: `false`
 
 
 ## License
