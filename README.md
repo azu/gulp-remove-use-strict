@@ -33,7 +33,7 @@ Type: `Object`
 
 ##### options.force
 
-Type: `boolean`
+Type: `boolean`<br>
 Default: `false`
 
   Set to `true` to remove `"use strict";` regardless of whether it appears as a directive prologue (see [remove-use-strict](azu/remove-use-strict) for more details).
